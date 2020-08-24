@@ -72,7 +72,7 @@ img {
   height: 100%;
   width: 100%;
 
-  background-color: rgba(229, 229, 229, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close-modal {
@@ -94,10 +94,14 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
+
+  outline: none;
 }
 
-.btn-close-modal:hover {
+.btn-close-modal:hover,
+.btn-close-modal:focus {
   fill: var(--button-bg-color);
+  border: 1px solid #2196f3;
 }
 
 /* MODAL CONTAINER */
@@ -110,8 +114,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  /* margin-right: auto;
-  margin-left: auto; */
+
   padding: 40px 40px;
   margin-bottom: 10px;
 
@@ -175,10 +178,14 @@ img {
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  outline: none;
 }
 
 .form-field:hover .form-input,
-.form-field:hover .form-textarea {
+.form-field:hover .form-textarea,
+.form-input:focus,
+.form-textarea:focus {
   border: 1px solid #2196f3;
 }
 .form-field:hover .modal-icon {
@@ -196,6 +203,8 @@ img {
   resize: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  outline: none;
 }
 .form-textarea::placeholder {
   font-family: Roboto;
@@ -247,26 +256,6 @@ img {
   background-color: #2196f3;
   border-color: transparent;
 }
-/* .checkbox-icon {
-  display: inline-block;
-
-  vertical-align: middle;
-
-  width: 15px;
-  height: 15px;
-
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-
-  border: 2px solid black;
-  border-radius: 4px;
-}
-
-.form-check:checked ~ .checkbox-icon {
-  background-color: #2196f3;
-  background-origin: border-box;
-  border: #2196f3;
-} */
 
 .button-field {
   background-origin: border-box;
@@ -312,9 +301,11 @@ img {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #fff;
   color: var(--accent--text-color);
+  border: transparent;
 }
 
 /* LIST OF LIMITS */
@@ -378,6 +369,7 @@ img {
 .header-page .link:focus {
   color: var(--accent--text-color);
   fill: var(--accent--text-color);
+  outline: transparent;
 }
 
 .site-nav {
@@ -622,6 +614,7 @@ img {
 .item-link:focus {
   fill: #ffffff;
   background-color: var(--icon-bg-color);
+  border: transparent;
 }
 
 /* REGULAR CUSTOMERS */
