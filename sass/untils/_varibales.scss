@@ -14,7 +14,7 @@
   --primary-letter-spacing: 0.03em;
 }
 
-%visually-hidden {
+@mixin visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -24,3 +24,5 @@
   width: 1px !important;
   overflow: hidden;
 }
+
+$white: #ffffff;

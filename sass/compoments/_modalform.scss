@@ -87,7 +87,7 @@
 }
 
 .form-check {
-  @extend %visually-hidden;
+  @include visually-hidden;
 }
 
 .checkbox-icon {
@@ -111,9 +111,4 @@
     background-color: #2196f3;
     border-color: transparent;
   }
-}
-
-.button-field {
-  background-origin: border-box;
-  text-align: center;
 }
