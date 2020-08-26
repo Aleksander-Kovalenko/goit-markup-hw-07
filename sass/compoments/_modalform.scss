@@ -16,7 +16,7 @@
 
   top: 50%;
   left: 12px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms $time-anim;
 
   .form-field:hover & {
     fill: #2196f3;
@@ -38,7 +38,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms $time-anim;
 
   outline: none;
 
@@ -58,7 +58,7 @@
   border-radius: 4px;
   resize: none;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border $time-anim;
 
   outline: none;
 
@@ -99,7 +99,7 @@
   width: 15px;
   height: 15px;
 
-  border: 1px solid black;
+  border: 1px solid $black;
   border-radius: 2px;
 
   .form-check:checked + & {
@@ -108,7 +108,7 @@
     background-size: contain;
     background-origin: border-box;
 
-    background-color: #2196f3;
+    background-color: var(--icon-bg-color);
     border-color: transparent;
   }
 }

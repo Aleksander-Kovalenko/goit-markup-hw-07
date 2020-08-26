@@ -10,7 +10,7 @@
 
   &:hover,
   &:focus {
-    fill: #ffffff;
+    fill: $white;
     background-color: var(--icon-bg-color);
     border: transparent;
   }
@@ -29,8 +29,7 @@
 
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $time-anim, fill $time-anim;
 
   fill: var(--icon-passive-color);
 
