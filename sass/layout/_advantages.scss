@@ -14,9 +14,7 @@
 }
 
 .common-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-direct;
   height: 120px;
   background-color: #f5f4fa;
 

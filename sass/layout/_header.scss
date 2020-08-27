@@ -25,12 +25,10 @@
 
 /* navigation menu */
 .main-nav {
-  display: flex;
-  align-items: center;
+  @include flex-direct;
 }
 
 .site-nav {
-  display: flex;
   height: 100%;
   margin-left: 85px;
 
@@ -65,7 +63,6 @@
 }
 
 .contact {
-  display: flex;
   margin-left: auto;
   align-items: center;
 

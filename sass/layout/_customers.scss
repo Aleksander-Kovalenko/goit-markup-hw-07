@@ -1,5 +1,5 @@
 .customers-list {
-  justify-content: center;
+  @include flex-direct;
 }
 
 .customers-item {
@@ -11,13 +11,10 @@
 }
 
 .company-link {
-  display: flex;
+  @include flex-direct;
 
   width: 170px;
   height: 90px;
-
-  justify-content: center;
-  align-items: center;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;

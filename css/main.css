@@ -355,6 +355,20 @@ template {
   --primary-letter-spacing: 0.03em;
 }
 
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -372,23 +386,9 @@ body {
   margin: 0;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  font-size: 14px;
   font-family: Roboto, sans-serif;
-  font-size: var(--primary-font-size);
-  letter-spacing: var(--primary-letter-spacing);
-}
-
-.flexbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.content-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  line-height: 1.2;
 }
 
 .header-page {
@@ -422,12 +422,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100%;
   margin-left: 85px;
 }
@@ -457,9 +457,6 @@ body {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -487,7 +484,6 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
 }
 
 .title.item {
@@ -590,7 +586,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.bacdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
 }
@@ -654,8 +650,8 @@ img {
   position: absolute;
   top: 50%;
   left: 12px;
-  -webkit-transition: fill 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:hover .modal-icon {
@@ -676,8 +672,8 @@ img {
   padding-bottom: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -702,33 +698,33 @@ img {
 }
 
 .form-textarea::-webkit-input-placeholder {
-  font-family: Roboto;
-  font-size: 12px;
+  font-family: Roboto, sans-serif;
   line-height: 1.2;
+  font-size: 12px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-textarea:-ms-input-placeholder {
-  font-family: Roboto;
-  font-size: 12px;
+  font-family: Roboto, sans-serif;
   line-height: 1.2;
+  font-size: 12px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-textarea::-ms-input-placeholder {
-  font-family: Roboto;
-  font-size: 12px;
+  font-family: Roboto, sans-serif;
   line-height: 1.2;
+  font-size: 12px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-textarea::placeholder {
-  font-family: Roboto;
-  font-size: 12px;
+  font-family: Roboto, sans-serif;
   line-height: 1.2;
+  font-size: 12px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -738,13 +734,22 @@ img {
   margin-bottom: 30px;
 }
 
-.label {
+.policy-field .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
-.form-check {
+.policy-field .form-check {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -757,9 +762,6 @@ img {
 
 .checkbox-icon {
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-right: 7px;
   width: 15px;
   height: 15px;
@@ -849,12 +851,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -980,6 +982,12 @@ img {
 }
 
 .customers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -999,14 +1007,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
-  height: 90px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icon-passive-color);
