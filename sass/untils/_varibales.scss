@@ -16,18 +16,19 @@
 // VALUE COLOR
 $white: #ffffff;
 $black: #000000;
-// FONT
-$font: 14px Roboto sans-serif;
 
 // TRANSITION
 $time-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // MIXIN
 
-@mixin font {
+@mixin font($width, $size, $height) {
+  font-size: $size;
+  font-weight: $width;
   font-family: Roboto, sans-serif;
-  line-height: 1.2;
+  line-height: $height;
 }
+
 @mixin visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
