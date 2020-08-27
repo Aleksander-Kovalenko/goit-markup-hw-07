@@ -16,5 +16,5 @@ body {
   background-color: var(--primary-bg-color);
 
   font-size: 14px;
-  @include font;
+  @include font(14px, 400, 1.2, 0.03em);
 }

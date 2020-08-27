@@ -9,10 +9,7 @@
   color: var(--button-color);
   background-color: var(--button-bg-color);
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(700, 16px, 1.9, 0.06em);
   letter-spacing: 0.06em;
 
   transition: color $time-anim, background-color $time-anim;

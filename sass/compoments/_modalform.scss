@@ -25,9 +25,8 @@
 
 .form-label {
   margin-top: 4px;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+
+  @include font(400, 12px, 1.2, 0.01em);
   color: #757575;
 }
 .form-input {
@@ -68,10 +67,7 @@
   }
 
   &::placeholder {
-    @include font;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-
+    @include font(400, 12px, 1.2, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 }

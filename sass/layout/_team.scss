@@ -1,5 +1,5 @@
 .team {
-  @include font(500, 16px, 1.2);
+  @include font(500, 16px, inherit, 0.03em);
   text-align: center;
   background-color: #f5f4fa;
 
