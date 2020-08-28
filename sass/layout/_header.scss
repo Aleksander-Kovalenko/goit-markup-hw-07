@@ -9,13 +9,13 @@
 
     transition: color $time-anim, fill $time-anim;
 
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
 
   & .link:hover,
   & .link:focus {
-    color: var(--accent--text-color);
-    fill: var(--accent--text-color);
+    color: $accent--text-color;
+    fill: $accent--text-color;
     outline: transparent;
   }
 }
@@ -50,12 +50,12 @@
     width: 100%;
     height: 4px;
 
-    background-color: var(--accent--text-color);
+    background-color: $accent--text-color;
     border-radius: 2px;
   }
 
   & .current {
-    color: var(--accent--text-color);
+    color: $accent--text-color;
   }
 }
 
@@ -68,7 +68,7 @@
   }
   & .btn {
     fill: #757575;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     text-decoration: none;
   }
   & .button-icon {

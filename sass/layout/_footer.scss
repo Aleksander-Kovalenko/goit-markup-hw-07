@@ -71,6 +71,6 @@
     fill: #ffffff;
   }
   &:hover .icon {
-    fill: var(--button-bg-color);
+    fill: $button-bg-color;
   }
 }

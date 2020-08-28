@@ -19,7 +19,7 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  fill: var(--icon-passive-color);
+  fill: $icon-passive-color;
 
   transition: fill $time-anim, border $time-anim;
 
@@ -27,7 +27,7 @@
   &:hover .icon,
   &:focus,
   &:focus .icon {
-    fill: var(--icon-bg-color);
-    border-color: var(--button-bg-color);
+    fill: $icon-bg-color;
+    border-color: $button-bg-color;
   }
 }
