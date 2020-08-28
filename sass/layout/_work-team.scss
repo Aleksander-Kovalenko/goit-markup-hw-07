@@ -23,8 +23,9 @@
 
   color: $white;
   background-color: rgba(47, 48, 58, 0.8);
+  @include font(700, 14px, 1.2, 00.03em);
 
-  @include font(400, 14px, 1.2, 0.03em);
+  // @include font(500, 14px, 1.2, 0.03em);
   text-transform: uppercase;
   text-align: center;
 }
