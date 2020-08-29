@@ -6,8 +6,8 @@
   border-radius: 4px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--button-color);
-  background-color: var(--button-bg-color);
+  color: $button-color;
+  background-color: $button-bg-color;
 
   @include font(700, 16px, 1.9, 0.06em);
   letter-spacing: 0.06em;
@@ -21,8 +21,8 @@
 
   &:hover,
   &:focus {
-    background-color: $white;
-    color: var(--accent--text-color);
+    background-color: $button-color;
+    color: $accent-text-color;
     border: transparent;
   }
 }

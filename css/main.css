@@ -577,8 +577,8 @@ img {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--button-color);
-  background-color: var(--button-bg-color);
+  color: #ffffff;
+  background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -594,7 +594,7 @@ img {
 
 .button:hover, .button:focus {
   background-color: #ffffff;
-  color: var(--accent--text-color);
+  color: #2196f3;
   border: transparent;
 }
 
@@ -669,8 +669,8 @@ img {
 }
 
 .btn-close-modal:hover, .btn-close-modal:focus {
-  fill: var(--button-bg-color);
-  border: 1px solid var(--button-bg-color);
+  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .button-field {
@@ -827,7 +827,7 @@ img {
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  background-color: var(--icon-bg-color);
+  background-color: #2196f3;
   border-color: transparent;
 }
 
@@ -1009,7 +1009,7 @@ img {
 
 .social-item:hover, .social-item:focus {
   fill: #ffffff;
-  background-color: var(--icon-bg-color);
+  background-color: #2196f3;
   border: transparent;
 }
 

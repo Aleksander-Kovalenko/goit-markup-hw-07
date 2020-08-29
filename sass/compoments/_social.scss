@@ -11,7 +11,7 @@
   &:hover,
   &:focus {
     fill: $white;
-    background-color: var(--icon-bg-color);
+    background-color: $icon-bg-color;
     border: transparent;
   }
   &:not(:last-child) {
@@ -33,7 +33,7 @@
 
   &:hover,
   &:focus {
-    fill: #ffffff;
+    fill: $button-color;
     background-color: $icon-bg-color;
     border: transparent;
   }
