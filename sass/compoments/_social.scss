@@ -29,12 +29,12 @@
 
   transition: background-color $time-anim, fill $time-anim;
 
-  fill: var(--icon-passive-color);
+  fill: $icon-passive-color;
 
   &:hover,
   &:focus {
     fill: #ffffff;
-    background-color: var(--icon-bg-color);
+    background-color: $icon-bg-color;
     border: transparent;
   }
 }
